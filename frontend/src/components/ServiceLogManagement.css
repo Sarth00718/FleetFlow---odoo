@@ -1,0 +1,359 @@
+.service-log-management {
+  padding: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.management-header h1 {
+  margin: 0;
+  color: #333;
+  font-size: 28px;
+}
+
+.form-container {
+  background: #f9f9f9;
+  padding: 25px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.list-container {
+  margin-top: 20px;
+}
+
+/* Service Log Form Styles */
+.service-log-form {
+  max-width: 600px;
+}
+
+.service-log-form h2 {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.service-log-form .form-group {
+  margin-bottom: 20px;
+}
+
+.service-log-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 600;
+  color: #555;
+}
+
+.service-log-form input,
+.service-log-form select,
+.service-log-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  font-family: inherit;
+}
+
+.service-log-form textarea {
+  resize: vertical;
+}
+
+.service-log-form input.error,
+.service-log-form select.error {
+  border-color: #dc3545;
+}
+
+.service-log-form .field-error {
+  display: block;
+  color: #dc3545;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.service-log-form .form-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 25px;
+}
+
+.success-message {
+  background-color: #d4edda;
+  color: #155724;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #c3e6cb;
+}
+
+.error-message {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #f5c6cb;
+}
+
+/* Service Log List Styles */
+.service-log-list {
+  width: 100%;
+}
+
+.service-log-list .list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.service-log-list .list-header h2 {
+  margin: 0;
+  color: #333;
+}
+
+.service-log-list .filter-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.service-log-list .filter-group label {
+  font-weight: 600;
+  color: #555;
+}
+
+.service-log-list .vehicle-filter {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 250px;
+}
+
+.vehicle-groups {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.vehicle-group {
+  background: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.vehicle-header {
+  background: #f8f9fa;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.vehicle-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.vehicle-header .total-cost {
+  color: #555;
+  font-size: 16px;
+}
+
+.vehicle-header .total-cost strong {
+  color: #333;
+  font-size: 18px;
+}
+
+.service-log-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.service-log-table thead {
+  background: #f8f9fa;
+}
+
+.service-log-table th {
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #555;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.service-log-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.service-log-table tbody tr:hover {
+  background-color: #f8f9fa;
+}
+
+.service-log-table tbody tr.completed {
+  opacity: 0.7;
+}
+
+.service-log-table .actions {
+  text-align: right;
+}
+
+.status-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.status-completed {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.status-pending {
+  background-color: #fff3cd;
+  color: #856404;
+}
+
+.status-badge.status-available {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.status-badge.status-in-shop {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.status-badge.status-on-trip {
+  background-color: #cce5ff;
+  color: #004085;
+}
+
+.status-badge.status-out-of-service {
+  background-color: #e2e3e5;
+  color: #383d41;
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.btn-primary:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #545b62;
+}
+
+.btn-complete {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+
+.btn-complete:hover:not(:disabled) {
+  background-color: #218838;
+}
+
+.btn-complete:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Loading and Error States */
+.loading,
+.error,
+.no-results {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-size: 16px;
+}
+
+.error {
+  color: #dc3545;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .management-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .service-log-list .list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .vehicle-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .service-log-table {
+    font-size: 13px;
+  }
+
+  .service-log-table th,
+  .service-log-table td {
+    padding: 8px 10px;
+  }
+}
